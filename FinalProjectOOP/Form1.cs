@@ -12,7 +12,10 @@ using System.IO;
 namespace FinalProjectOOP
 {
     public partial class Form1 : Form
+       
     {
+        //private Form0 frm0;
+
         public Form1()
         {
             InitializeComponent();
@@ -20,6 +23,10 @@ namespace FinalProjectOOP
             comboBox2.Items.Insert(1, "Jessica Livingston");
             comboBox2.Items.Insert(2, "Gavin Anthony");
         }
+
+
+        //https://www.youtube.com/watch?v=--dgs8FuR20  Variable Transfer from different form
+
 
         private void button1_Click(object sender, EventArgs e)
         {

@@ -31,8 +31,20 @@ namespace FinalProjectOOP
 
         private void newRequestToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             Form1 form = new Form1();
             form.ShowDialog();
+        }
+        OpenFileDialog OFD = new OpenFileDialog();
+        string address = "";
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (OFD.ShowDialog() == DialogResult.OK)
+            {
+                address = OFD.FileName.ToString();
+                Form2 form = new Form2(address);
+                form.ShowDialog();
+            }
         }
     }
 }
