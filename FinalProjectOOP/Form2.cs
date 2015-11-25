@@ -34,6 +34,11 @@ namespace FinalProjectOOP
 
         {
             InitializeComponent();
+
+            comboBox2.Items.Insert(0, "Joe Temte");
+            comboBox2.Items.Insert(1, "Jessica Livingston");
+            comboBox2.Items.Insert(2, "Gavin Anthony");
+
             address = add;
             StreamReader file = new StreamReader(add);
             while ((line = file.ReadLine()) != null)
