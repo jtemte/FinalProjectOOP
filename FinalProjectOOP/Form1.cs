@@ -43,6 +43,7 @@ namespace FinalProjectOOP
             int ID = 00002;
 
             File.WriteAllText(ID +".txt", Date + Environment.NewLine + Time + Environment.NewLine + Type + Environment.NewLine + Fname + Environment.NewLine + Lname + Environment.NewLine + Pnum + Environment.NewLine + Email + Environment.NewLine + Problem + Environment.NewLine + Resolution + Environment.NewLine + Tech + Environment.NewLine + ID);
+            this.Close();
         }
     }
 }

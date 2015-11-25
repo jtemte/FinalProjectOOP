@@ -46,5 +46,20 @@ namespace FinalProjectOOP
                 form.ShowDialog();
             }
         }
+
+        private void loadRequestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (OFD.ShowDialog() == DialogResult.OK)
+            {
+                address = OFD.FileName.ToString();
+                Form2 form = new Form2(address);
+                form.ShowDialog();
+            }
+        }
+
+        private void visitWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("www.temteindustries.com");
+        }
     }
 }

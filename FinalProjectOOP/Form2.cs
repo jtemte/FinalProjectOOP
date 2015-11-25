@@ -61,10 +61,29 @@ namespace FinalProjectOOP
             textBox4.Text = Lname;
             textBox5.Text = Pnum;
             textBox6.Text = Email;
-            textBox2.Text = Problem;
-            textBox1.Text = Resolution;
+            textBox1.Text = Problem;
+            textBox2.Text = Resolution;
             comboBox2.Text = Tech;
+            file.Close();
         }
-            
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            string Date = textBox8.Text;
+            string Time = textBox7.Text;
+            string Type = comboBox1.Text;
+            string Fname = textBox3.Text;
+            string Lname = textBox4.Text;
+            string Pnum = textBox5.Text;
+            string Email = textBox6.Text;
+            string Problem = textBox1.Text;
+            string Resolution = textBox2.Text;
+            string Tech = comboBox2.Text;
+            int ID = 00002;
+
+            File.WriteAllText(ID + ".txt", Date + Environment.NewLine + Time + Environment.NewLine + Type + Environment.NewLine + Fname + Environment.NewLine + Lname + Environment.NewLine + Pnum + Environment.NewLine + Email + Environment.NewLine + Problem + Environment.NewLine + Resolution + Environment.NewLine + Tech + Environment.NewLine + ID);
+            this.Close();
+        }
     }
 }
