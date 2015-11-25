@@ -15,17 +15,23 @@ namespace FinalProjectOOP
        
     {
         //private Form0 frm0;
+        string line1;
+        int counter1 = 0;
+        int ID;
 
         public Form1()
         {
             InitializeComponent();
-            comboBox2.Items.Insert(0, "Joe Temte");
-            comboBox2.Items.Insert(1, "Jessica Livingston");
-            comboBox2.Items.Insert(2, "Gavin Anthony");
+            ID = int.Parse(File.ReadAllText("ID.idx"));
+
+            StreamReader file2 = new StreamReader("Techs.mtf");
+            while ((line1 = file2.ReadLine()) != null)
+            {
+                comboBox2.Items.Insert(counter1, line1);
+                counter1++;
+            }
+            file2.Close();
         }
-
-
-        //https://www.youtube.com/watch?v=--dgs8FuR20  Variable Transfer from different form
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,9 +46,10 @@ namespace FinalProjectOOP
             string Problem = textBox1.Text;
             string Resolution = textBox2.Text;
             string Tech = comboBox2.Text;
-            int ID = 00002;
+            ID++;
 
-            File.WriteAllText(ID +".txt", Date + Environment.NewLine + Time + Environment.NewLine + Type + Environment.NewLine + Fname + Environment.NewLine + Lname + Environment.NewLine + Pnum + Environment.NewLine + Email + Environment.NewLine + Problem + Environment.NewLine + Resolution + Environment.NewLine + Tech + Environment.NewLine + ID);
+            File.WriteAllText("Profiles\\"+ID +'-'+Lname+'_'+Fname +".sps", Date + Environment.NewLine + Time + Environment.NewLine + Type + Environment.NewLine + Fname + Environment.NewLine + Lname + Environment.NewLine + Pnum + Environment.NewLine + Email + Environment.NewLine + Problem + Environment.NewLine + Resolution + Environment.NewLine + Tech + Environment.NewLine + ID);
+            File.WriteAllText("ID.idx", ID.ToString());
             this.Close();
         }
     }

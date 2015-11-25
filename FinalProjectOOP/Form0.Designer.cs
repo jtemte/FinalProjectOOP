@@ -103,6 +103,7 @@
             this.manageTechnitiansToolStripMenuItem.Name = "manageTechnitiansToolStripMenuItem";
             this.manageTechnitiansToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manageTechnitiansToolStripMenuItem.Text = "Manage Technitians";
+            this.manageTechnitiansToolStripMenuItem.Click += new System.EventHandler(this.manageTechnitiansToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -116,8 +117,8 @@
             // documentationToolStripMenuItem
             // 
             this.documentationToolStripMenuItem.Name = "documentationToolStripMenuItem";
-            this.documentationToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.documentationToolStripMenuItem.Text = "Documentation";
+            this.documentationToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.documentationToolStripMenuItem.Text = "User Manual";
             // 
             // visitWebsiteToolStripMenuItem
             // 
@@ -179,7 +180,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form0";
-            this.Text = "Form0";
+            this.Text = "SupSys";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

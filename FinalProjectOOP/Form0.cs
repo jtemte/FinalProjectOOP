@@ -61,5 +61,11 @@ namespace FinalProjectOOP
         {
             System.Diagnostics.Process.Start("www.temteindustries.com");
         }
+
+        private void manageTechnitiansToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Mtechs form = new Mtechs();
+            form.ShowDialog();
+        }
     }
 }
