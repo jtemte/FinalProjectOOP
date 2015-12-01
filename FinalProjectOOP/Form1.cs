@@ -31,6 +31,7 @@ namespace FinalProjectOOP
                 counter1++;
             }
             file2.Close();
+            label8.Text = "ID = " + (ID+1);
         }
 
 

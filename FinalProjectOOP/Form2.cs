@@ -36,6 +36,7 @@ namespace FinalProjectOOP
 
         {
             InitializeComponent();
+            ID = File.ReadAllText("ID.idx").ToString();
             StreamReader file2 = new StreamReader("Techs.mtf");
             while ((line1 = file2.ReadLine()) != null)
             {
@@ -51,17 +52,17 @@ namespace FinalProjectOOP
                 counter++;
             }
 
-            string Date = info[0];
-            string Time = info[1];
-            string Type = info[2];
-            string Fname = info[3];
-            string Lname = info[4];
-            string Pnum = info[5];
-            string Email = info[6];
-            string Problem = info[7];
-            string Resolution = info[8];
-            string Tech = info[9];
-            string ID = info[10];
+Date = info[0];
+Time = info[1];
+Type = info[2];
+Fname = info[3];
+Lname = info[4];
+Pnum = info[5];
+Email = info[6];
+Problem = info[7];
+Resolution = info[8];
+Tech = info[9];
+ID = info[10];
 
             textBox8.Text = Date;
             textBox7.Text = Time;
@@ -73,6 +74,7 @@ namespace FinalProjectOOP
             textBox1.Text = Problem;
             textBox2.Text = Resolution;
             comboBox2.Text = Tech;
+            label8.Text = "ID = " + ID;
             file.Close();
         }
 

@@ -39,6 +39,7 @@ namespace FinalProjectOOP
         string address = "";
         private void button2_Click(object sender, EventArgs e)
         {
+            
             if (OFD.ShowDialog() == DialogResult.OK)
             {
                 address = OFD.FileName.ToString();
@@ -49,6 +50,7 @@ namespace FinalProjectOOP
 
         private void loadRequestToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //OFD.InitialDirectory = ".\\Profiles\\";
             if (OFD.ShowDialog() == DialogResult.OK)
             {
                 address = OFD.FileName.ToString();
@@ -59,7 +61,7 @@ namespace FinalProjectOOP
 
         private void visitWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("www.temteindustries.com");
+            System.Diagnostics.Process.Start("http://temteindustries.com/supsys.html");
         }
 
         private void manageTechnitiansToolStripMenuItem_Click(object sender, EventArgs e)
