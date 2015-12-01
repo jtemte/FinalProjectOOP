@@ -118,18 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>
- 
-Project Support Log:
+    <value>About:
 
-A software technical support log at the software company where you just start working maintains a log
-of phone calls and email requests from customers, name of the technician providing the support, date
-and time of the request, was the problem resolved and how. The current system keeping all of this
-technical information is just too darn difficult to maintain and a pain to extend. You and your team’s job
-is to completely redesign this system using object oriented techniques and principles, some of which
-are described in the overview. Feel free to discuss with your Boss (Professor) any addition (s) to the log
-you deemed necessary. 
-</value>
+        SupSys is a software application designed and developed by Temte Industries ©.  Our developers worked to provide the best support systemavailable for the logging of work requests from customers.  
+        SupSys includes the method of contact, customer contact information, date and time of the request, 
+the technician providing the support, the request and the technician’s resolution.  
+        Other features of this application include a back end file system, a user-friendly interface, and a User Manual.  
+Using the back end file system paired with unique identification numbers for each request, Temte Industries’ © application development team has also included a load functionwith searching capabilities to find and load old requests to view and edit at the technicians’ convenience.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
