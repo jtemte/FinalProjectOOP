@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace FinalProjectOOP
 {
@@ -68,6 +69,15 @@ namespace FinalProjectOOP
         {
             Mtechs form = new Mtechs();
             form.ShowDialog();
+        }
+
+        private void documentationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process firstProc = new Process();
+            firstProc.StartInfo.FileName = "SupSys_User_Manual.pdf";
+            firstProc.EnableRaisingEvents = true;
+
+            firstProc.Start();
         }
     }
 }
