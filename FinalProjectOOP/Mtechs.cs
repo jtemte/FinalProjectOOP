@@ -46,6 +46,7 @@ namespace FinalProjectOOP
             string names = textBox1.Text;
 
             File.WriteAllText("Techs.mtf", names);
+            this.Close();
         }
 
     }
